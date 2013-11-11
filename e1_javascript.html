@@ -4,14 +4,38 @@
 		<meta charset="UTF-8" />
 		<title>javascript</title>
 		<script>
-		
-		//
+			//comentario de 1 linea
+			/* 
+			   comentario de varias
+			   lineas			 
+			*/
+			
+			//comando basico
+			alert('hola mundo');
+			
+			//imprime en el documento
+			//concatenamos cadenas y numeros
+			document.write("hola" + (10 + 5.8) + "<br/>" );
 
+            //el comando prompt nos sirve para pedir datos
+			var nombreUsuario = prompt("escribe tu nombre");
+			
+			//mostramos los datos que introdujo el usuario
+			document.write("tu nombre es:" + nombreUsuario + "<br/>");
 
+			//declaramos variables
+			//note el uso del keyword var
+			var nombre = "ismael"; //texto
+			var edad = 27;         //entero
+			var peso = 69.8;       //decimales
+
+            //podemos usar variables con solo invocar la variable
+			document.write(nombre);
+						
 		</script>
 
 	</head>
 	<body>
-		
+
 	</body>
 </html>

@@ -4,6 +4,30 @@
 		<meta charset="UTF-8" />
 		<title>javascript</title>
 		<script>
+		    //forma 1 de declarar un objeto
+		    var persona = new Object();
+		    persona.nombre = "ismael";
+		    persona.edad = 27;
+		    persona.hablar = function(){
+		    	alert("hola a todos!");
+		    };
+		    
+		    //equivalentemente podemos declar un objeto
+		    //usando la notacion JSON
+		    var persona2 = {
+		    	nombre:"ismael",
+		    	edad:27,
+		    	hablar: function(){
+		    		alert("hola a todos");
+		    	}
+		    };
+		    
+		    //invocamos los metodos y propiedades de la persona 1
+		    persona.hablar();
+		    
+		    //invocamos los metodos y propiedades de la persona 2
+		    persona2.hablar();		    
+		    
 		
 		</script>
 

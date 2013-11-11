@@ -5,6 +5,45 @@
 		<title>javascript</title>
 		<script>
 		
+		 //asi se define una funcion normalmente
+		 function calculaAreaCuadrado(base, altura){
+		 	var area = base*altura; 
+		 	return area;
+		 }
+		 
+		 //alternativamente se puede usar una funcion anonima
+		 var calculaAreaCuadrado2 = function(base, altura){
+		 	var area = base*altura; 
+		 	
+		 	return area;
+		 };
+		 
+		 //note que puede pasar como argumento la definicion de una funcion
+		 function calculaArea(miFuncion){
+		 	//INVOCAMOS A UNA FUNCION CONTENIDA
+		 	//EN UNA VARIABLE, ALGO UNICO EN JAVASCRIPT
+		 	var area = miFuncion(10,3);
+		 	return area;
+		 }
+		 
+		 //INVOCAMOS A LAS FUNCIONES QUE DECLARAMOS
+		 
+		 //le pasamos una funcion a otra funcion!
+		 var area1 = calculaArea(calculaAreaCuadrado);
+		 
+		 //le pasamos una variable que contiene una funcion a otra funcion!
+		 var area2 = calculaArea(calculaAreaCuadrado2);
+		 
+		 //Creamos la definicion de la funcion(anonima) y se la pasamos a otra funcion!
+		 var area3 = calculaArea(function(base, altura){
+		  	              var area = base*altura; 
+		 	              return area;
+		                });
+		 
+		 document.write("el area1 es :" + area1 + "<br/>");
+		 document.write("el area2 es :" + area2 + "<br/>");
+		 document.write("el area3 es :" + area3 + "<br/>");
+		
 		</script>
 
 	</head>
